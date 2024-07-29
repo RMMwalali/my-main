@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "module": "esnext", // Updated to support newer module syntax
+    "target": "es5",
+    "lib": ["es2015", "dom"],
+    "jsx": "react-jsx", // Updated for React 17+ JSX transform
+    "allowJs": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true, // Recommended for better module interop
+    "skipLibCheck": true, // Optional: Speeds up compilation by skipping library checks
+    "forceConsistentCasingInFileNames": true // Ensures consistent casing in file names
+  },
+  "include": [
+    "src/**/*" // Ensures all files under src directory are included
+  ]
+}
