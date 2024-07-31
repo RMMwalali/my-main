@@ -1,4 +1,4 @@
-import Clients from "@/components/Clients";
+import Initiatives from "@/components/Initiatives";
 import ContactSection from "@/components/ContactSection";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
@@ -8,14 +8,14 @@ import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
 import Hero from "@/components/Hero/hero"
 import Mission from "@/components/MissionSvg"
 import Vision from "@/components/VisionSvg"
-
+import Subsidiaries from "@/components/Subsidiaries";
 
 
 export default function Home() {
   return (
     <main className="text-black">
       <Hero/>
-  <FadeIn className="w-full mt-20 sm:mt-25">
+      <FadeIn className="w-full mt-20 sm:mt-25">
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {/* Mission Card */}
       <div className="bg-black text-gray-200 p-6 m-5 shadow-md rounded-lg flex flex-col text-left">
@@ -40,20 +40,19 @@ export default function Home() {
         </p>
       </div>
     </div>
-  </FadeIn>
+      </FadeIn>
       <Container className="mt-24 sm:mt-32">
-        <FadeIn className="max-w-3xl">
-          <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
-            Make your online presence a reality with us!
+        <FadeIn className="w-3/4">
+          <h1 className="font-display text-4xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+            Visionary Empowerment for Community Transformation
           </h1>
           <p className="mt-6 text-xl text-neutral-600">
-            We are a group of developer working at the intersection of design
-            and technology. It is a really busy intersection though — a lot of
-            our staff have been involved in hit and runs.
+            We are a visionary NGO committed to enacting sustainable solutions and empowering young individuals to achieve financial stability. Our multifaceted projects address diverse challenges, ranging from education to entrepreneurship, aiming to create a positive and lasting impact on the community. Join Greater Kenya, and become an integral part of these initiatives, contributing to the transformation of lives and communities.
           </p>
         </FadeIn>
       </Container>
-      <Clients />
+      <Initiatives />
+      <Subsidiaries/>
       <Testimonials
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: "Phobia", logo: logoPhobiaDark }}
