@@ -48,7 +48,7 @@ const Initiatives = () => {
   };
 
   return (
-    <div className="mt-5 rounded-4xl bg-white py-20 sm:mt-15 sm:py-32 lg:mt-10">
+    <div className="mt-5 rounded-4xl bg-white py-20 sm:mt-15 sm:py-32 lg:mt-5">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-xl font-semibold tracking-wider text-black sm:text-left">
@@ -67,7 +67,7 @@ const Initiatives = () => {
                 initial={{ scale: 0.95 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.3 }}
-                className="p-4 rounded-lg shadow-md bg-white border-2 border-black m-2 hover:shadow-lg transition-shadow duration-300 ease-in-out"
+                className="p-4 shadow-md bg-white border-2 border-black m-2 hover:shadow-lg transition-shadow duration-300 ease-in-out"
               >
                 <h3 className="font-display text-2xl font-semibold underline underline-offset-8" style={{ color: initiative.color }}>
                   {initiative.title}

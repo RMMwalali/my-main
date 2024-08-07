@@ -29,21 +29,8 @@ const subsidiaries = [
 
 const Subsidiaries = () => {
   return (
-    <div className="mt-8 bg-black py-10 sm:mt-6 sm:py-12 lg:mt-0">
+    <div className="mt-8 bg-black rounded-3xl border-8 border-white py-10 sm:mt-6 sm:py-12 lg:mt-0">
       <Container>
-        <FadeIn className="flex flex-col md:flex-row justify-between items-center w-full">
-          {/* Heading Section */}
-          <div className="w-full md:w-1/2">
-            <h1 className="font-display text-4xl font-medium tracking-tight text-white sm:text-6xl">
-              Our Subsidiaries
-            </h1>
-          </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 text-left md:text-right">
-            <p className="text-xl text-justify text-gray-200">
-              Greater Kenya Organisation offers diversification in its portfolio to cater for each and every member. Members may join these subsidiaries after obtaining membership and can therefore venture into what they are really passionate about within the framework of operation.
-            </p>
-          </div>
-        </FadeIn>
         <FadeInStagger faster>
           <ul
             role="list"
@@ -56,7 +43,7 @@ const Subsidiaries = () => {
                     {/* Responsive Image */}
                     <Image src={logo} alt={`${client} logo`} className="w-20 h-20" />
                     {/* Responsive Title */}
-                    <span className="text-lg font-semibold underline text-gray-200 underline-offset-8 decoration-2">{client}</span>
+                    <span className="text-xl font-semibold font-display underline text-gray-200 underline-offset-8 decoration-2">{client}</span>
                     {/* Description */}
                     <p className="mt-4 text-sm leading-loose text-white text-justify text-center">{description}</p>
                   </div>
