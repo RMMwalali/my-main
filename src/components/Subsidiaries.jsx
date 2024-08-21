@@ -40,11 +40,8 @@ const Subsidiaries = () => {
               <li key={client} className="flex flex-col items-center space-y-2">
                 <FadeIn className="">
                   <div className="flex flex-col items-left justify-between">
-                    {/* Responsive Image */}
                     <Image src={logo} alt={`${client} logo`} className="w-20 h-20" />
-                    {/* Responsive Title */}
                     <span className="text-xl font-semibold font-display underline text-gray-200 underline-offset-8 decoration-2">{client}</span>
-                    {/* Description */}
                     <p className="mt-4 text-sm leading-loose text-white text-justify text-center">{description}</p>
                   </div>
                 </FadeIn>

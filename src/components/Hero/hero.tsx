@@ -102,7 +102,7 @@ const sliderData = [
     title: "Plant For The Future",
     description:
       "Our community is working side by side, planting trees to create a sustainable and beautiful environment for future generations",
-    location: "Together We",
+    location: "Together, Let's",
   },
 ];
 

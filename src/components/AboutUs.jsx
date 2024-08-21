@@ -36,7 +36,7 @@ const AboutUsSection = () => {
           </h2>
           <motion.div layout className="mt-4 sm:mt-5 flex items-center justify-center sm:justify-start gap-3">
             <button
-              className="w-fit border border-[#ffffff8f] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-[15px] font-semibold text-white transition duration-300 ease-in-out hover:bg-green-500 hover:text-white"
+              className="w-fit border border-[#ffffff8f] px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-[15px] font-semibold text-white bg-green-500 transition duration-300 ease-in-out hover:bg-green-300 hover:text-white"
             >
               LEARN MORE
             </button>

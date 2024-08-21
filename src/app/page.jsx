@@ -2,7 +2,6 @@ import Initiatives from "@/components/Initiatives";
 import ContactSection from "@/components/ContactSection";
 import Container from "@/components/Container";
 import FadeIn from "@/components/FadeIn";
-import Services from "@/components/Services";
 import Testimonials from "@/components/Testimonials";
 import logoPhobiaDark from "@/images/clients/phobia/logo-dark.svg";
 import Hero from "@/components/Hero/hero"
@@ -28,7 +27,7 @@ export default function Home() {
           </p>
         </FadeIn>
       </Container>
-      <FadeIn className="w-full mt-20 sm:mt-25">
+      <FadeIn className="w-full mt-10 sm:mt-15">
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
       {/* Mission Card */}
       <div className="bg-black text-gray-200 p-6 m-5 shadow-md flex flex-col text-left">
@@ -67,16 +66,13 @@ export default function Home() {
         </FadeIn>
       </Container>
       <Subsidiaries />
+      <Memberships />
       <Testimonials
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: "Phobia", logo: logoPhobiaDark }}
       >
-        The team at Studio went above and beyond with our onboarding, even
-        finding a way to access the user microphone without triggering one of
-        those annoying permission dialogs.
+        Working with Greater Kenya Organisation has been a truly transformative experience. Their unwavering commitment to empowering young people and fostering sustainable solutions is evident in every project.
       </Testimonials>
-      <Memberships/>
-      <Services />
       <ContactSection />
     </main>
   );

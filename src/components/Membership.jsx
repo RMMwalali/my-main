@@ -1,57 +1,88 @@
-import Image from "next/image";
-import logoBasic from "../images/subsidiaries/pay-money.svg";
-import logoPremium from "../images/subsidiaries/pay-money.svg";
-import logoVIP from "../images/subsidiaries/pay-money.svg";
-import Container from "./Container";
-import FadeIn, { FadeInStagger } from "./FadeIn";
+import TabComponent from "./TabComponent";
+import TabContent from "./TabContent";
+import Container from "@/components/Container";
+import FadeIn from "@/components/FadeIn";
+import { MdOutlineAssistant } from "react-icons/md";
+import { MdOutlineDiversity1 } from "react-icons/md";
+import { RiVipCrown2Line } from "react-icons/ri";
+import { RiVipDiamondLine } from "react-icons/ri";
+import "./../app/globals.css";
 
-const memberships = [
-  ["Basic Membership", logoBasic, "Access to basic features and content. Ideal for those who are just starting and want to explore the essentials."],
-  ["Premium Membership", logoPremium, "Includes all the benefits of Basic plus premium features, exclusive content, and priority support."],
-  ["VIP Membership", logoVIP, "All-inclusive access to features, priority support, exclusive events, and more. Tailored for those who want the best experience."],
-];
+export default function Membership() {
+  const tabs = [
+    {
+      title: "Basic Membership",
+      id: "basicmembership",
+      icon: <MdOutlineAssistant />,
+      color: "#ff6f61",
+      content: TabContent,
+      destinations: [
+      {
+        name: "White Card",
+        items: ["Partial medical NHIF support", "Partially paid event attendance", "Access to loans after one year of membership", "Business Support", "Emergency Support", "Job opportunities"],
+        image: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202863/Cooloors/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_ufs8kt.jpg",
+      },
+    ],
+    },
+    {
+      title: "Foundation Series X",
+      id: "foundationseriesx",
+      icon: <MdOutlineDiversity1 />,
+      color: "#113BD4",
+      content: TabContent,
+      destinations: [
+      {
+        name: "Blue Card",
+        items: ["Zero monthly membership fee from 2025", "Full/partial NHIF medical support for the member and immediate family", "Free/partially paid event attendance", "Access to loans after 6 months of membership", "10% incentive on savings annually","Legal support"],
+        image: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202863/Cooloors/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_ufs8kt.jpg",
+      },
+    ],
+    },
+    {
+      title: "Foundation Series",
+      id: "foundation series",
+      icon: <RiVipCrown2Line />,
+      color: "#000000",
+      content: TabContent,
+      destinations: [
+      {
+        name: "Black Card",
+        items: ["No monthly membership payment", "Full medical NHIF cover ", "Full/partial medical NHIF or direct cover for the member's direct family","Immediate access to loans", "20% incentive on savings annually" ,"Free event attendance"],
+        image: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202863/Cooloors/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_ufs8kt.jpg",
+      },
+    ],
+    },
+    {
+      title: "Exclusive Access",
+      id: "exclusiveaccess",
+      icon: <RiVipDiamondLine />,
+      color: "#ffd700",
+      content: TabContent,
+      destinations: [
+      {
+        name: "Gold Card",
+        items: ["The golden card is a special card only given to those fortunate enough to become employees at Greater Kenya. Working for the organization can be a very pleasant experience and a chance to enhance one's skills."],
+        image: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202863/Cooloors/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_ufs8kt.jpg",
+      },
+    ],
+    },
+  ];
 
-const Memberships = () => {
   return (
-    <div className="mt-8 bg-black py-10 sm:mt-6 sm:py-12 lg:mt-0">
-      <Container>
-        <FadeIn className="flex flex-col md:flex-row justify-between items-center w-full">
-          {/* Heading Section */}
-          <div className="w-full md:w-1/2">
-            <h1 className="font-display text-4xl font-medium tracking-tight text-white sm:text-6xl">
-              Our Memberships
-            </h1>
-          </div>
-          <div className="w-full md:w-1/2 mt-6 md:mt-0 text-left md:text-right">
-            <p className="text-xl text-justify text-gray-200">
-              Discover the perfect membership plan for you. Each level offers unique benefits and access to exclusive content. Join now and unlock your potential!
-            </p>
-          </div>
+    <div id="root">
+      <Container className="mt-16 sm:mt-24">
+        <FadeIn className="w-full">
+          <h1 className="font-display text-center text-4xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
+            <span className="mb-6 block tracking-wider text-center font-display text-base font-semibold text-black">Our Membership Plans</span>
+            Whatever you are passionate about is what our focus is on
+          </h1>
+          <p className="mt-6 mb-8 text-xl text-center text-neutral-600">
+            We offer lucrative membership packages with our aim being that every member in the Organisation benefits.
+The agenda is to create a safe zone where our members can feel free to express their potential and become the best version of themselves.
+          </p>
         </FadeIn>
-        <FadeInStagger faster>
-          <ul
-            role="list"
-            className="mt-10 grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3"
-          >
-            {memberships.map(([name, logo, description]) => (
-              <li key={name} className="flex flex-col items-center space-y-2">
-                <FadeIn className="">
-                  <div className="flex flex-col items-left justify-between">
-                    {/* Responsive Image */}
-                    <Image src={logo} alt={`${name} logo`} className="w-20 h-20" />
-                    {/* Responsive Title */}
-                    <span className="text-lg font-semibold underline text-gray-200 underline-offset-8 decoration-2">{name}</span>
-                    {/* Description */}
-                    <p className="mt-4 text-sm leading-loose text-white text-justify text-center">{description}</p>
-                  </div>
-                </FadeIn>
-              </li>
-            ))}
-          </ul>
-        </FadeInStagger>
       </Container>
+      <TabComponent tabs={tabs} />
     </div>
   );
-};
-
-export default Memberships;
+}
