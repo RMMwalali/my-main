@@ -2,11 +2,11 @@ import { SocialMediaProfiles } from "@/components/SocialMedia";
 
 export const navigation = [
   {
-    title: "Work",
+    title: "Projects",
     links: [
-      { title: "AH MANA3RAF", href: "/work/amazonclone" },
-      { title: "AH MANA3RAF", href: "/work/bazar" },
-      { title: "AH MANA3RAF", href: "/work/blog101" },
+      { title: "A Seamless Education Payment System", href: "/work/amazonclone" },
+      { title: "Developing Tree Conservation Zones", href: "/work/bazar" },
+      { title: "A Digital Waste Management System", href: "/work/blog101" },
       {
         title: (
           <>
@@ -20,10 +20,10 @@ export const navigation = [
   {
     title: "Company",
     links: [
-      { title: "About", href: "/about" },
-      { title: "Process", href: "/process" },
-      { title: "Blog", href: "/blog" },
-      { title: "Contact us", href: "/contact" },
+      { title: "Home", href: "/about" },
+      { title: "Memberships", href: "/process" },
+      { title: "Projects", href: "/blog" },
+      { title: "Loans, Savings & Subsidiaries", href: "/contact" },
     ],
   },
   {

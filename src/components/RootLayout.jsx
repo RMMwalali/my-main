@@ -161,7 +161,6 @@ const RootLayoutInner = ({ children }) => {
                 }}
               />
             </div>
-            {/* Navigation */}
             <Navigation />
             <div className="relative bg-neutral-950 before:absolute before:inset-x-0 before:top-0 before:h-px before:bg-neutral-800">
               <Container>

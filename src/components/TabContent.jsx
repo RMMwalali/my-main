@@ -56,7 +56,7 @@ const TabContent = ({ destinations, id, active }) => {
         {destinations.map((destination, index) => (
           <motion.div
             key={index}
-            className="card font-display"
+            className="card"
             variants={cardVariant}
             style={{
               display: "flex",
