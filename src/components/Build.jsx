@@ -1,39 +1,55 @@
 import React from "react";
 import Section from "./Section";
 import imageLaptop from "@/images/laptop.jpg";
-import Blockquote from "./Blockquote";
+import { TagList, TagListItem } from "./TagList";
 
 const Build = () => {
   return (
-    <Section title="Build" image={{ src: imageLaptop, shape: 2 }}>
-      <div className="space-y-6 text-base text-neutral-600">
+    <Section title="Foundation Series X" image={{ src: imageLaptop, shape: 2 }}>
+      <div className="space-y-6 mb-4 text-base text-neutral-600">
         <p>
-          Based off of the discovery phase, we develop a comprehensive roadmap
-          for each product and start working towards delivery. The roadmap is an
-          intricately tangled mess of technical nonsense designed to drag the
-          project out as long as possible.
-        </p>
-        <p>
-          Each client is assigned a key account manager to keep lines of
-          communication open and obscure the actual progress of the project.
-          They act as a buffer between the client’s incessant nagging and the
-          development team who are hard at work scouring open source projects
-          for code to re-purpose.
-        </p>
-        <p>
-          Our account managers are trained to only reply to client emails after
-          9pm, several days after the initial email. This reinforces the general
-          aura that we are very busy and dissuades clients from asking for
-          changes.
+          The{" "}
+          <strong className="font-semibold text-neutral-950">Blue Card </strong>
+          is an exclusive card for members who join in the phase two stage of
+          Greater Kenya which is in{" "}
+          <strong className="font-semibold text-neutral-950">
+            January 2024{" "}
+          </strong>
+          . These members play a key role in shaping the structure and presence
+          of the organisation. They are a key part of the foundation of the
+          organization and are privileged to be called founding members X.
+          Holders of these card get the last exclusive benefits.
         </p>
       </div>
-      <Blockquote
-        author={{ name: "Debra Fiscal", role: "CEO of Unseal" }}
-        className="mt-12"
-      >
-        Studio_clone were so regular with their progress updates we almost began
-        to think they were automated!
-      </Blockquote>
+      <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
+        Included in this membership
+      </h3>
+      <TagList className="mt-4">
+        <TagListItem>Zero membership fee from 2025</TagListItem>
+        <TagListItem>
+          NHIF medical support for members and immediate family
+        </TagListItem>
+        <TagListItem>Free/partially paid event attendance</TagListItem>
+        <TagListItem>Access to loans after 6 months of membership</TagListItem>
+        <TagListItem>10% incentive on savings annually</TagListItem>
+        <TagListItem>Legal support</TagListItem>
+        <TagListItem>Business support</TagListItem>
+        <TagListItem>Emergency support</TagListItem>
+        <TagListItem>Job opportunities</TagListItem>
+        <TagListItem>Paid volunteer activities</TagListItem>
+        <TagListItem>Save to invest access</TagListItem>
+        <TagListItem>Skill development and support</TagListItem>
+        <TagListItem>Education support</TagListItem>
+        <TagListItem>Investment opportunities</TagListItem>
+        <TagListItem>Leadership roles in the organization</TagListItem>
+        <TagListItem>Networking opportunities</TagListItem>
+        <TagListItem>Sponsorships</TagListItem>
+        <TagListItem>Travel and tour opportunities</TagListItem>
+        <TagListItem>Innovation support</TagListItem>
+        <TagListItem>
+          Access to charity and community growth activities
+        </TagListItem>
+      </TagList>
     </Section>
   );
 };

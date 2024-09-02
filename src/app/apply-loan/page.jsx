@@ -7,11 +7,21 @@ import TextInput from "@/components/TextInput";
 import RadioInput from "@/components/RadioInput";
 import Button from "@/components/Button";
 
-const ContactPage = () => {
+const LoanPage = () => {
   return (
     <>
-      <PageIntro eyebrow="Contact us" title="Get in Touch">
-        <p>We can not wait to hear from you.</p>
+      <PageIntro
+        eyebrow="Apply for a Loan"
+        title="We’re excited to assist you in your financial journey"
+      >
+        <p>
+          Loans can be a burden when offered with unfavourable terms. Greater
+          Kenya understands that its members may be going through financial
+          difficulties and may need assistance. The organization will be there
+          to help its members get a good credit rating and become financially
+          stable through sustainable loans that are taken only when in need and
+          paid back on time.
+        </p>
       </PageIntro>
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
@@ -30,9 +40,9 @@ const ContactPage = () => {
                   autoComplete="email"
                 />
                 <TextInput
-                  label="Company"
-                  name="company"
-                  autoComplete="organization"
+                  label="Membership ID (if applicable)"
+                  name="membershipid"
+                  autoComplete="membership ID"
                 />
                 <TextInput
                   label="Phone"
@@ -40,11 +50,11 @@ const ContactPage = () => {
                   name="phone"
                   autoComplete="tel"
                 />
-                <TextInput label="Message" name="message" />
+                <TextInput label="Loan Purpose" name="loan purpose" />
                 <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
                   <fieldset>
                     <legend className="text-base/6 text-neutral-500">
-                      Budget
+                      Loan Amount
                     </legend>
                   </fieldset>
                   <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -64,7 +74,7 @@ const ContactPage = () => {
                 </div>
               </div>
               <Button type="submit" className="mt-10">
-                Let’s work together
+                Submit
               </Button>
             </form>
           </FadeIn>
@@ -74,4 +84,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default LoanPage;

@@ -5,39 +5,65 @@ import { TagList, TagListItem } from "./TagList";
 
 const Discover = () => {
   return (
-    <Section title="Discover" image={{ src: imageWhiteboard, shape: 1 }}>
+    <Section
+      title="Foundation Series"
+      image={{ src: imageWhiteboard, shape: 1 }}
+    >
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          We work closely with our clients to understand their{" "}
-          <strong className="font-semibold text-neutral-950">needs</strong> and
-          goals, embedding ourselves in their every day operations to understand
-          what makes their business tick.
+          The{" "}
+          <strong className="font-semibold text-neutral-950">
+            Black Card{" "}
+          </strong>
+          is an exclusive card that is reserved for founding members who joined
+          the organisation in
+          <strong className="font-semibold text-neutral-950">
+            {" "}
+            April 2023{" "}
+          </strong>
+          when the organisation was at its infacy.
         </p>
         <p>
-          Our team of private investigators shadow the company director’s for
-          several weeks while our account managers focus on going through their
-          trash. Our senior security experts then perform social engineering
-          hacks to gain access to their{" "}
-          <strong className="font-semibold text-neutral-950">business</strong>
-          accounts — handing that information over to our forensic accounting
-          team.
-        </p>
-        <p>
-          Once the full audit is complete, we report back with a comprehensive
-          <strong className="font-semibold text-neutral-950">plan</strong> and,
-          more importantly, a budget.
+          These members have managed to maintain patience and dedication. They
+          have been key players in helping shape the future of the organisation.
+          The holders of this card get
+          <strong className="font-semibold text-neutral-950">
+            {" "}
+            exclusive benefits{" "}
+          </strong>
+          in accordance to their commitment to the organisation.
         </p>
       </div>
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        Included in this membership
       </h3>
       <TagList className="mt-4">
-        <TagListItem>In-depth questionnaires</TagListItem>
-        <TagListItem>Feasibility studies</TagListItem>
-        <TagListItem>Blood samples</TagListItem>
-        <TagListItem>Employee surveys</TagListItem>
-        <TagListItem>Proofs-of-concept</TagListItem>
-        <TagListItem>Forensic audit</TagListItem>
+        <TagListItem>
+          Full medical NHIF cover for emergencies or chronic illness
+        </TagListItem>
+        <TagListItem>
+          Medical cover for family members in emergencies
+        </TagListItem>
+        <TagListItem>Immediate access to loans</TagListItem>
+        <TagListItem>20% incentive on savings annually</TagListItem>
+        <TagListItem>Free event attendance</TagListItem>
+        <TagListItem>Legal support</TagListItem>
+        <TagListItem>Business support</TagListItem>
+        <TagListItem>Emergency support</TagListItem>
+        <TagListItem>Job opportunities</TagListItem>
+        <TagListItem>Paid volunteer activities</TagListItem>
+        <TagListItem>Save to invest opportunities</TagListItem>
+        <TagListItem>Skill development and support</TagListItem>
+        <TagListItem>Education support</TagListItem>
+        <TagListItem>Investment opportunities</TagListItem>
+        <TagListItem>Leadership roles in the organization</TagListItem>
+        <TagListItem>Networking opportunities</TagListItem>
+        <TagListItem>Sponsorships</TagListItem>
+        <TagListItem>Travel and tour opportunities</TagListItem>
+        <TagListItem>Innovation support</TagListItem>
+        <TagListItem>
+          Access to charity and community growth activities
+        </TagListItem>
       </TagList>
     </Section>
   );

@@ -20,8 +20,8 @@ export const navigation = [
   {
     title: "Company",
     links: [
-      { title: "Home", href: "/about" },
-      { title: "Memberships", href: "/process" },
+      { title: "Loans", href: "/loans" },
+      { title: "Memberships", href: "/memberships" },
       { title: "Projects", href: "/blog" },
       { title: "Loans, Savings & Subsidiaries", href: "/contact" },
     ],

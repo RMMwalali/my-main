@@ -3,6 +3,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useId, useRef, useState } from "react";
 import { motion, MotionConfig, useReducedMotion } from "framer-motion";
 import Container from "./Container";
+import { Link as ScrollLink } from "react-scroll";
 import Link from "next/link";
 import Logo from "./Logo";
 import { HiMenuAlt4 } from "react-icons/hi";
@@ -13,6 +14,15 @@ import Offices from "./Offices";
 import SocialMedia from "./SocialMedia";
 import Footer from "./Footer";
 
+const navItems = [
+  { id: "about-us", label: "About Us" },
+  { id: "mission", label: "Mission & Vision" },
+  { id: "initiatives", label: "Initiatives" },
+  { id: "subsidiaries", label: "Subsidiaries" },
+];
+
+
+
 const Header = ({
   panelId,
   invert = false,
@@ -21,16 +31,56 @@ const Header = ({
   onToggle,
   toggleRef,
 }) => {
-  // Container
+  const [activeSection, setActiveSection] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPos = window.scrollY + window.innerHeight / 2;
+      navItems.forEach((item) => {
+        const section = document.getElementById(item.id);
+        if (section && scrollPos >= section.offsetTop && scrollPos < section.offsetTop + section.offsetHeight) {
+          setActiveSection(item.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <Container>
       <div className="flex items-center justify-between mb-2">
-        {/* Logo */}
-        <Link href={"/"} aria-label="Home">
+        <ScrollLink
+          to="hero"
+          smooth={true}
+          duration={500}
+          offset={-70}
+          aria-label="Home"
+        >
           <Logo invert={invert}>Greater Kenya Organisation</Logo>
-        </Link>
-        <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
+        </ScrollLink>
+        <div className="flex items-center font-semibold text-black gap-x-8">
+          {navItems.map((item) => (
+            <ScrollLink
+              key={item.id}
+              to={item.id}
+              smooth={true}
+              duration={500}
+              offset={-70}
+              className={clsx(
+                "cursor-pointer",
+                invert
+                  ? "text-white hover:underline hover:decoration-2 hover:underline-offset-8"
+                  : activeSection === item.id
+                  ? "underline decoration-solid decoration-2 underline-offset-8"
+                  : "hover:underline hover:decoration-2 hover:underline-offset-8"
+              )}
+            >
+              {item.label}
+            </ScrollLink>
+          ))}
+          <Button href="/contact" invert={invert}>
             Contact us
           </Button>
           <button
@@ -85,12 +135,12 @@ const Navigation = () => {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Our Work</NavigationItem>
-        <NavigationItem href="/about">About Us</NavigationItem>
+        <NavigationItem href="/loans">Loans</NavigationItem>
+        <NavigationItem href="/savings">Savings</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Our Process</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/memberships">Memberships</NavigationItem>
+        <NavigationItem href="/blog">Careers</NavigationItem>
       </NavigationRow>
     </nav>
   );
@@ -188,7 +238,6 @@ const RootLayoutInner = ({ children }) => {
       </header>
       <motion.div
         layout
-        style={{ borderTopLeftRadius: 40, borderTopRightRadius: 40 }}
         className="relative flex flex-auto overflow-hidden bg-white pt-14"
       >
         <motion.div
