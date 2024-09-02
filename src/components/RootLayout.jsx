@@ -61,25 +61,6 @@ const Header = ({
           <Logo invert={invert}>Greater Kenya Organisation</Logo>
         </ScrollLink>
         <div className="flex items-center font-semibold text-black gap-x-8">
-          {navItems.map((item) => (
-            <ScrollLink
-              key={item.id}
-              to={item.id}
-              smooth={true}
-              duration={500}
-              offset={-70}
-              className={clsx(
-                "cursor-pointer",
-                invert
-                  ? "text-white hover:underline hover:decoration-2 hover:underline-offset-8"
-                  : activeSection === item.id
-                  ? "underline decoration-solid decoration-2 underline-offset-8"
-                  : "hover:underline hover:decoration-2 hover:underline-offset-8"
-              )}
-            >
-              {item.label}
-            </ScrollLink>
-          ))}
           <Button href="/contact" invert={invert}>
             Contact us
           </Button>
