@@ -10,7 +10,8 @@ const ContactSection = () => {
       <FadeIn className="-mx-6 rounded-4xl bg-blue-900 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
         <div className="max-w-4xl mx-auto">
           <h2 className="font-display text-3xl font-medium text-white [text-wrap:balance] sm:text-4xl">
-            Ready to take the next step with a loan? Let's get started on your application!
+            Ready to take the next step with a loan? Let&#39;s get started on
+            your application!
           </h2>
           <div className="mt-6 flex">
             <Button href={"/apply-loan"} invert>

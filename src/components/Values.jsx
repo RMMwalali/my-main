@@ -29,10 +29,10 @@ const Values = () => {
           </GridListItem>
           <GridListItem title="Failure to Fulfill Obligations">
             Neglecting responsibilities or failing to meet agreed-upon
-            commitments weakens the organization's foundation.
+            commitments weakens the organization&#39;s foundation.
           </GridListItem>
           <GridListItem title="Inconsistent Actions with Mission/Values">
-            Behaviors or decisions that do not align with the organization's
+            Behaviors or decisions that do not align with the organization&#39;s
             core mission and values are unacceptable.
           </GridListItem>
           <GridListItem title="Non-Payment of Dues">
@@ -69,7 +69,7 @@ const Values = () => {
           </GridListItem>
           <GridListItem title="Lack of Commitment">
             A demonstrated lack of dedication or engagement with the
-            organization's activities weakens the collective effort.
+            organization&#39;s activities weakens the collective effort.
           </GridListItem>
           <GridListItem title="Discrimination or Harassment">
             Any form of discrimination or harassment is strictly prohibited and
@@ -89,7 +89,7 @@ const Values = () => {
           </GridListItem>
           <GridListItem title="Lack of Contribution or Participation">
             A consistent failure to contribute to or engage in organizational
-            activities impacts the group's effectiveness.
+            activities impacts the group&#39;s effectiveness.
           </GridListItem>
           <GridListItem title="False Representation of the Organization">
             Misrepresenting the organization or falsely speaking on its behalf
@@ -103,9 +103,9 @@ const Values = () => {
         <p className="font-display leading-loose font-semibold text-black m-6 mt-12 text-lg pt-5">
           Greater Kenya hopes that it would never have to terminate a member but
           there are various factors that will be considered in order to maintain
-          the brand's reputation. It's important that each member obliges to the
+          the brand&#39;s reputation. It&#39;s important that each member obliges to the
           policies of the Organization. Termination will also lead to the
-          termination of the member's organisation ID number and card validity.
+          termination of the member&#39;s organisation ID number and card validity.
         </p>
       </Container>
     </div>

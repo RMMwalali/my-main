@@ -18,7 +18,7 @@ const Build = () => {
             employees{" "}
           </strong>
           at Greater Kenya. Working for the organization can be a very pleasant
-          experience and a chance to enhance one's skills.
+          experience and a chance to enhance one&#39;s skills.
         </p>
       </div>
     </Section>

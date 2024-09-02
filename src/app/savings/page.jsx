@@ -28,7 +28,7 @@ const AboutPage = () => {
             It is not mandatory for a member to invest although it is
             recommended for a better financially stable future for each person.
             Savings will be done monthly and reviewed annually at the end of the
-            year. Depending on a member's membership card, they may get
+            year. Depending on a member&#39;s membership card, they may get
             incentives on their savings meaning the organization will boost
             their savings with an extra amount to encourage a healthy saving
             culture.
