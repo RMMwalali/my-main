@@ -51,15 +51,16 @@ const Header = ({
   return (
     <Container>
       <div className="flex items-center justify-between mb-2">
-        <ScrollLink
+        <Link
           to="hero"
+          href="/"
+          aria-label="Home"
           smooth={true}
           duration={500}
           offset={-70}
-          aria-label="Home"
         >
           <Logo invert={invert}>Greater Kenya Organisation</Logo>
-        </ScrollLink>
+        </Link>
         <div className="flex items-center font-semibold text-black gap-x-8">
           <Button href="/contact" invert={invert}>
             Contact us
