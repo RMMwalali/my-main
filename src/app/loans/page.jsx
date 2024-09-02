@@ -50,10 +50,12 @@ const WorkPage = () => {
           </div>
           {/* List item */}
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <h3 className="text-2xl font-display font-semibold text-black">Loan Eligibility & Issuance Guidelines</h3>
+            <h3 className="text-2xl font-display font-semibold text-black">
+              Loan Eligibility & Issuance Guidelines
+            </h3>
             <ListItem title="Loan Issuance Criteria">
               Loans will be issued based on the nature of the request, the
-              amount required, and the member's specific membership card.
+              amount required, and the member&#39;s specific membership card.
             </ListItem>
             <ListItem title="Savings Plan Requirement">
               Only members enrolled in the savings plan are eligible to apply
