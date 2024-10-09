@@ -9,6 +9,8 @@ import RadioInput from "@/components/RadioInput";
 import Button from "@/components/Button";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
+import Image from "next/image";
+
 
 const CareersPage = () => {
   const [selectedJobTitle, setSelectedJobTitle] = useState('');
@@ -79,9 +81,11 @@ const CareersPage = () => {
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        <img
+        <Image
           src="https://res.cloudinary.com/dtnbwgpca/image/upload/t_n/v1726834349/GKO/dl.beatsnoop.com-high-b6f2fb70b73e777dd9_p6zzat.jpg"
           alt="Career Opportunities"
+          width={800}
+          height={600}
           className="p-20 w-full h-auto"
         />
       </motion.div>

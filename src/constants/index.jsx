@@ -18,17 +18,16 @@ export const navigation = [
     ],
   },
   {
+    title: "Connect",
+    links: SocialMediaProfiles,
+  },
+  {
     title: "Company",
     links: [
       { title: "Loans", href: "/loans" },
       { title: "Careers", href: "/careers" },
       { title: "Savings", href: "/savings" },
       { title: "Memberships", href: "/memberships" },
-      
     ],
-  },
-  {
-    title: "Connect",
-    links: SocialMediaProfiles,
   },
 ];
