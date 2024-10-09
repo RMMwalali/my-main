@@ -9,7 +9,7 @@ const initiatives = [
   {
     title: "A Seamless Education Payment System",
     subtitle: "A payment system that can be used in learning institutions for payment of essential services like school fees, pocket money, ...",
-    description: "A payment system that can be used in learning institutions for payment of essential services like school fees, pocket money, school trips, extracurricular activities, and other related activities. The aim of the project is to solve the stress of conventional methods that are time-consuming, such as making trips to the bank, and to address transparency challenges. The system also allows direct communication between parents and institutions, as well as the direct transmission of results, thus providing real-time access to a learner's progress",
+    description: "A payment system that can be used in learning institutions for payment of essential services like school fees, pocket money, school trips, extracurricular activities, and other related activities. The aim of the project is to solve the stress of conventional methods that are time-consuming, such as making trips to the bank, and to address transparency challenges. The system also allows direct communication between parents and institutions, as well as the direct transmission of results, thus providing real-time access to a learner's progress.",
     color: "#f5cf1d", 
   },
   {

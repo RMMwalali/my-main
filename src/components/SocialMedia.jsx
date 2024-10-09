@@ -9,27 +9,28 @@ import {
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
+    {
+    title: "X",
+    href: "",
+    icon: BsTwitter,
+  },
+  { title: "GitHub", href: "", icon: BsGithub },
   {
     title: "Youtube",
-    href: "https://www.youtube.com/watch?v=eAswnbWptBM",
+    href: "",
     icon: BsYoutube,
   },
-  { title: "GitHub", href: "https://github.com/chrhi", icon: BsGithub },
   {
-    title: "Facebook",
-    href: "https://www.facebook.com/profile.php?id=100010070348939",
-    icon: BsFacebook,
-  },
-  {
-    title: "linkedin",
-    href: "https://www.linkedin.com/in/chehri-abdellah-4a8858267/",
+    title: "LinkedIn",
+    href: "",
     icon: BsLinkedin,
   },
   {
-    title: "Twitter",
-    href: "https://twitter.com/KING_IN_JUNGLE",
-    icon: BsTwitter,
+    title: "Facebook",
+    href: "",
+    icon: BsFacebook,
   },
+  
 ];
 
 const SocialMedia = ({ className, invert = false }) => {

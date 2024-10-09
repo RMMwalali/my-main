@@ -77,28 +77,28 @@ export default function Home() {
 
 const sliderData = [
   {
-    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202831/Cooloors/animal-lizard-nature-multi-colored-close-up-generative-ai_pvihqw.jpg",
+    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1727638734/GKO/zqn7ocdq8zgeb5jallge.jpg",
     location: "Welcome To",
     description:
       "Where our focus is grounded in the pursuit of creating financial stability for young people.",
     title: "The Greater Kenya Organisation",
   },
   {
-    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202863/Cooloors/liquid-purple-art-painting-abstract-colorful-background-with-color-splash-paints-modern-art_ufs8kt.jpg",
+    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1727639446/nature-blossom-plant-stem-leaf-flower-1128492-pxhere.com_jtlafw.jpg",
     title: "10,000 Tree Planting Project",
     description:
       "We aim to plant 10,000 trees this year, creating greener spaces and promoting environmental sustainability",
     location: "Introducing Our",
   },
   {
-    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202796/Cooloors/abstract-multi-colored-confetti-falling-festive-celebration-generative-ai_ucvtyb.jpg",
+    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1727639819/group-people-young-youth-cheering-community-1010802-pxhere.com_mpyb4p.jpg",
     title: "Children and Nature",
     description:
       "With 1,000,000 KES pledged, we are helping school children in need while fostering a greener, healthier Kenya through our tree planting initiative",
     location: "Supporting Our",
   },
   {
-    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1722202701/Cooloors/top-view-holi-color-white-background-with-blank-circle_t0mq53.jpg",
+    img: "https://res.cloudinary.com/dtnbwgpca/image/upload/v1727640349/landscape-tree-forest-outdoor-wilderness-branch-674-pxhere.com_if2mh5.jpg",
     title: "Plant For The Future",
     description:
       "Our community is working side by side, planting trees to create a sustainable and beautiful environment for future generations",

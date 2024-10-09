@@ -4,16 +4,16 @@ export const navigation = [
   {
     title: "Projects",
     links: [
-      { title: "A Seamless Education Payment System", href: "/work/amazonclone" },
-      { title: "Developing Tree Conservation Zones", href: "/work/bazar" },
-      { title: "A Digital Waste Management System", href: "/work/blog101" },
+      { title: "A Seamless Education Payment System", href: "/projects" },
+      { title: "Developing Tree Conservation Zones", href: "/projects" },
+      { title: "A Digital Waste Management System", href: "/projects" },
       {
         title: (
           <>
-            See all <span aria-hidden="true">&rarr;</span>
+            Learn More <span aria-hidden="true">&rarr;</span>
           </>
         ),
-        href: "/work",
+        href: "/projects",
       },
     ],
   },
@@ -21,9 +21,10 @@ export const navigation = [
     title: "Company",
     links: [
       { title: "Loans", href: "/loans" },
+      { title: "Careers", href: "/careers" },
+      { title: "Savings", href: "/savings" },
       { title: "Memberships", href: "/memberships" },
-      { title: "Projects", href: "/blog" },
-      { title: "Loans, Savings & Subsidiaries", href: "/contact" },
+      
     ],
   },
   {

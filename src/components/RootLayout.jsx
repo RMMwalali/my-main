@@ -122,7 +122,7 @@ const Navigation = () => {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/memberships">Memberships</NavigationItem>
-        <NavigationItem href="/blog">Careers</NavigationItem>
+        <NavigationItem href="/careers">Careers</NavigationItem>
       </NavigationRow>
     </nav>
   );

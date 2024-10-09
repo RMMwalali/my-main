@@ -29,7 +29,7 @@ const LoanPage = () => {
           <FadeIn>
             <form>
               <h2 className="font-display text-base font-semibold text-neutral-950">
-                Work inquiries
+                Loan inquiries
               </h2>
               <div className="isolate mt-6 -space-y-px rounded-2xl bg-white/50">
                 <TextInput label="Name" name="name" autoComplete="name" />

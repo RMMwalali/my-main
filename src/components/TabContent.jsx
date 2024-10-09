@@ -76,12 +76,20 @@ const TabContent = ({ destinations, id, active }) => {
                 </h2>
                 <ul className="list-none p-0 m-0">
                   {destination.items.map((item, i) => (
-                    <li key={i} className="mb-2 grayscale text-left sm:grayscale">✅ {item}</li>
+                    <li
+                      key={i}
+                      className="mb-2 grayscale text-left sm:grayscale"
+                    >
+                      ✅ {item}
+                    </li>
                   ))}
                 </ul>
-                <motion.div layout className="mt-4 sm:mt-5 flex items-center justify-center sm:justify-start gap-3">
+                <motion.div
+                  layout
+                  className="mt-4 sm:mt-5 flex items-center justify-center sm:justify-start gap-3"
+                >
                   <button className="w-fit border-2 border-black px-4 sm:px-6 py-2 sm:py-3 text-sm sm:text-[15px] font-semibold text-black transition duration-300 ease-in-out">
-                    LEARN MORE
+                    <a href="/memberships">LEARN MORE</a>
                   </button>
                 </motion.div>
               </div>
